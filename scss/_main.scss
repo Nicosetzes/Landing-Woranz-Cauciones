@@ -1,0 +1,33 @@
+.main {
+  background-color: $gray;
+  padding: 121px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
+  .main__hero {
+    background-color: $beige;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3rem 0.75rem 0 0.75rem;
+    .hero__content-text {
+      align-items: center;
+      display: flex;
+      flex-flow: column wrap;
+      h1,
+      p {
+        color: $blue;
+        text-align: center;
+      }
+      h1 {
+        font-size: $font-xxl;
+        font-weight: 700;
+        line-height: 3.5rem;
+      }
+      p {
+        font-size: $font-md;
+        font-weight: 450;
+        margin: 1.5rem 0;
+      }
+    }
+    .hero__content-image {
+      margin: 1.5rem 0 0 0;
+    }
+  }
+}
