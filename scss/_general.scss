@@ -30,7 +30,8 @@ h3,
 h4,
 h5,
 h6,
-p input,
+p,
+input,
 textarea,
 button,
 select {
@@ -43,7 +44,7 @@ select {
   border: 0;
   border-radius: 1.5rem;
   color: $blue;
-  font-size: $font-md;
+  font-size: $font-sm;
   font-weight: 700;
   max-width: fit-content;
   padding: 0.5em 1.5em;

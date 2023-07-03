@@ -5,11 +5,11 @@
     background-color: $beige;
     display: flex;
     flex-flow: row wrap;
-    padding: 3rem 0.75rem 0 0.75rem;
-    .hero__content-text {
+    .hero__content-header {
       align-items: center;
       display: flex;
       flex-flow: column wrap;
+      padding: 3rem 0.75rem 0 0.75rem;
       h1,
       p {
         color: $blue;
@@ -21,13 +21,123 @@
         line-height: 3.5rem;
       }
       p {
-        font-size: $font-md;
+        font-size: $font-sm;
         font-weight: 450;
         margin: 1.5rem 0;
       }
     }
     .hero__content-image {
-      margin: 1.5rem 0 0 0;
+      padding: 1rem 0.75rem 0 0.75rem;
+    }
+    .hero__content-info {
+      background-color: $gray;
+      padding: 4rem 0.75rem;
+      width: 100%;
+      .card {
+        align-items: flex-start;
+        background-color: $yellow;
+        border-radius: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        max-width: fit-content;
+        padding: 2rem 1.25rem;
+        .card-item {
+          align-items: center;
+          display: flex;
+          margin: 0 0 1rem 0;
+          &:last-of-type {
+            margin: 0;
+          }
+          img {
+          }
+          p {
+            color: $blue;
+            margin: 0;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__M1 {
+    background-color: $blue;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 3rem 0.75rem;
+    p {
+      color: $beige;
+    }
+    .M1__content-header {
+      margin: 0 0 2rem 0;
+      p {
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+        &:nth-of-type(1) {
+          font-size: $font-xs;
+          font-weight: 700;
+        }
+        &:nth-of-type(2) {
+          font-size: $font-xl;
+          font-weight: 700;
+          line-height: $font-xl;
+        }
+        &:nth-of-type(3) {
+          font-size: $font-xs;
+          margin: 0;
+        }
+      }
+    }
+    .M1__content-main {
+      display: flex;
+      .main__text {
+        margin: 0 0 2rem 0;
+        & > p {
+          font-size: $font-lg;
+          font-weight: 700;
+          margin: 0 0 1.25rem 0;
+          text-align: center;
+        }
+        .main__text-item {
+          align-items: flex-start;
+          display: flex;
+          flex-flow: row nowrap;
+          margin: 0 0 1rem 0;
+          &:last-of-type {
+            margin: 0;
+          }
+          svg {
+            flex-basis: 3rem;
+            flex-shrink: 0;
+            height: 3rem;
+            margin: 0 1rem 0 0;
+          }
+          p {
+            font-size: $font-xs;
+          }
+        }
+      }
+    }
+    .M1__content-footer {
+      background-color: $green;
+      border-radius: 2rem;
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0 0 2rem 0;
+      padding: 1.5rem;
+      p {
+        color: #fff;
+        font-size: $font-sm;
+        text-align: center;
+        &:first-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+    .button-main {
+      margin: 0 auto;
     }
   }
 }
