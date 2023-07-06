@@ -43,13 +43,20 @@
         max-width: fit-content;
         padding: 2rem 1.25rem;
         .card-item {
-          align-items: center;
+          align-items: flex-start;
           display: flex;
           margin: 0 0 1rem 0;
+          @media only screen and (min-width: 576px) {
+            align-items: center;
+          }
           &:last-of-type {
             margin: 0;
           }
-          img {
+          svg {
+            flex-basis: 2.5rem;
+            flex-shrink: 0;
+            height: 2.5rem;
+            margin: 0 1rem 0 0;
           }
           p {
             color: $blue;
@@ -92,6 +99,9 @@
     }
     .M1__content-main {
       display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0 0 2rem 0;
       .main__text {
         margin: 0 0 2rem 0;
         & > p {
@@ -112,7 +122,7 @@
             flex-basis: 3rem;
             flex-shrink: 0;
             height: 3rem;
-            margin: 0 1rem 0 0;
+            margin: 0.25rem 1rem 0 0;
           }
           p {
             font-size: $font-xs;
@@ -138,6 +148,106 @@
     }
     .button-main {
       margin: 0 auto;
+    }
+  }
+  .main__M2 {
+    color: $blue;
+    padding: 3rem 0.75rem;
+    .M2__content-header {
+      margin: 0 0 2rem 0;
+      h1 {
+        font-size: $font-xxl;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+      }
+      p {
+        font-size: $font-sm;
+        text-align: center;
+      }
+    }
+    .M2__content-main {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .main__information {
+        background-color: #fff;
+        border: $blue 1px solid;
+        border-radius: 1.75rem;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 1rem;
+        max-width: 435px;
+        padding: 3rem 0.5rem 1.5rem 0.5rem;
+        position: relative;
+        & > div {
+          border-bottom: $blue 1px solid;
+          display: flex;
+          flex-flow: column wrap;
+          padding: 1.5rem 1rem;
+          width: 100%;
+          &:nth-of-type(1) {
+            align-items: center;
+            flex-flow: column wrap;
+            font-size: $font-md;
+            font-weight: 700;
+            padding: 3.5rem 0 0 0;
+            text-align: center;
+            p {
+              &:first-child {
+                font-weight: 900;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            align-items: center;
+            font-size: $font-xxl;
+            text-align: center;
+            p {
+              line-height: 3rem;
+              span {
+                font-weight: 700;
+              }
+            }
+          }
+          &:nth-of-type(3),
+          &:nth-of-type(8) {
+            align-items: center;
+            font-size: $font-lg;
+            font-weight: 700;
+            text-align: center;
+          }
+          &:nth-of-type(4),
+          &:nth-of-type(5),
+          &:nth-of-type(6),
+          &:nth-of-type(7),
+          &:nth-of-type(9) {
+            align-items: flex-start;
+            font-size: $font-xs;
+            text-align: left;
+            a {
+              color: $blue;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+          &:nth-of-type(10) {
+            border: 0;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 1.5rem 0 0 0;
+            .button-secondary {
+              width: 100%;
+            }
+          }
+        }
+        & > svg {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
     }
   }
 }

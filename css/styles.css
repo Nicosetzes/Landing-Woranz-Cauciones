@@ -53,6 +53,24 @@ select {
   text-decoration: none;
 }
 
+.button-secondary {
+  background-color: #323d4a;
+  border: 0;
+  border-radius: 1.5rem;
+  color: #f3d52a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 250px;
+  padding: 0.5em 1.75em;
+  text-decoration: none;
+}
+
 .header nav {
   background-color: #323d4a;
   padding: 1.5rem 0.75rem;
@@ -209,16 +227,31 @@ select {
   padding: 2rem 1.25rem;
 }
 .main .main__hero .hero__content-info .card .card-item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 1rem 0;
 }
+@media only screen and (min-width: 576px) {
+  .main .main__hero .hero__content-info .card .card-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .main .main__hero .hero__content-info .card .card-item:last-of-type {
   margin: 0;
+}
+.main .main__hero .hero__content-info .card .card-item svg {
+  -ms-flex-preferred-size: 2.5rem;
+      flex-basis: 2.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 2.5rem;
+  margin: 0 1rem 0 0;
 }
 .main .main__hero .hero__content-info .card .card-item p {
   color: #323d4a;
@@ -265,6 +298,14 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 2rem 0;
 }
 .main .main__M1 .M1__content-main .main__text {
   margin: 0 0 2rem 0;
@@ -297,7 +338,7 @@ select {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 3rem;
-  margin: 0 1rem 0 0;
+  margin: 0.25rem 1rem 0 0;
 }
 .main .main__M1 .M1__content-main .main__text .main__text-item p {
   font-size: 1.25rem;
@@ -325,4 +366,130 @@ select {
 }
 .main .main__M1 .button-main {
   margin: 0 auto;
+}
+.main .main__M2 {
+  color: #323d4a;
+  padding: 3rem 0.75rem;
+}
+.main .main__M2 .M2__content-header {
+  margin: 0 0 2rem 0;
+}
+.main .main__M2 .M2__content-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+.main .main__M2 .M2__content-header p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main .main__M2 .M2__content-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .main__M2 .M2__content-main .main__information {
+  background-color: #fff;
+  border: #323d4a 1px solid;
+  border-radius: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 1rem;
+  max-width: 435px;
+  padding: 3rem 0.5rem 1.5rem 0.5rem;
+  position: relative;
+}
+.main .main__M2 .M2__content-main .main__information > div {
+  border-bottom: #323d4a 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(1) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 3.5rem 0 0 0;
+  text-align: center;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(1) p:first-child {
+  font-weight: 900;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  text-align: center;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(2) p {
+  line-height: 3rem;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(2) p span {
+  font-weight: 700;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(3), .main .main__M2 .M2__content-main .main__information > div:nth-of-type(8) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(4), .main .main__M2 .M2__content-main .main__information > div:nth-of-type(5), .main .main__M2 .M2__content-main .main__information > div:nth-of-type(6), .main .main__M2 .M2__content-main .main__information > div:nth-of-type(7), .main .main__M2 .M2__content-main .main__information > div:nth-of-type(9) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.25rem;
+  text-align: left;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(4) a, .main .main__M2 .M2__content-main .main__information > div:nth-of-type(5) a, .main .main__M2 .M2__content-main .main__information > div:nth-of-type(6) a, .main .main__M2 .M2__content-main .main__information > div:nth-of-type(7) a, .main .main__M2 .M2__content-main .main__information > div:nth-of-type(9) a {
+  color: #323d4a;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(10) {
+  border: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 0 0 0;
+}
+.main .main__M2 .M2__content-main .main__information > div:nth-of-type(10) .button-secondary {
+  width: 100%;
+}
+.main .main__M2 .M2__content-main .main__information > svg {
+  position: absolute;
+  right: 0;
+  top: 0;
 }/*# sourceMappingURL=styles.css.map */

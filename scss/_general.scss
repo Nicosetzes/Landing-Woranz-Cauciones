@@ -50,3 +50,17 @@ select {
   padding: 0.5em 1.5em;
   text-decoration: none;
 }
+
+.button-secondary {
+  background-color: $blue;
+  border: 0;
+  border-radius: 1.5rem;
+  color: $yellow;
+  display: flex;
+  font-size: $font-xs;
+  font-weight: 700;
+  justify-content: center;
+  max-width: 250px;
+  padding: 0.5em 1.75em;
+  text-decoration: none;
+}
