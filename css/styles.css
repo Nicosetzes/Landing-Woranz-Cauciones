@@ -807,6 +807,7 @@ select {
 }
 .main .main__M4 .M4__content-header div a {
   color: #323d4a;
+  text-underline-offset: 0.35rem;
 }
 .main .main__M4 .M4__content-main .main__block {
   background-color: #fff;
@@ -815,6 +816,7 @@ select {
   margin: 1rem auto;
   max-width: 700px;
   padding: 2rem;
+  scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado */
 }
 .main .main__M4 .M4__content-main .main__block > p:nth-of-type(1) {
   background-color: #f3d52a;
@@ -1096,6 +1098,13 @@ footer .footer__M1 {
         justify-content: space-around;
   }
 }
+@media only screen and (min-width: 992px) {
+  footer .footer__M1 {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 footer .footer__M1 .M1__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1139,6 +1148,7 @@ footer .footer__M1 .M1__header .header__banner img {
   }
 }
 footer .footer__M1 .M1__header .header__text {
+  color: #323d4a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1192,19 +1202,26 @@ footer .footer__M1 .M1__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-preferred-size: 700px;
+      flex-basis: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 0 1rem;
   margin: 1rem auto;
 }
 @media only screen and (min-width: 992px) {
   footer .footer__M1 .M1__main {
-    -webkit-box-orient: vertical;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
-    height: 225px;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: auto 0;
   }
 }
@@ -1229,8 +1246,9 @@ footer .footer__M1 .M1__main .main__block {
     font-size: 1.25rem;
     height: 75px;
     margin: 0 0.25rem;
+    max-width: 350px;
     padding: 0.5rem 0;
-    width: 200px;
+    width: 47.5%;
   }
 }
 footer .footer__M1 .M1__main .main__block:hover span {

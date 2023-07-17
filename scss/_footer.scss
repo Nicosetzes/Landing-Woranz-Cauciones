@@ -6,6 +6,9 @@ footer {
       display: flex;
       justify-content: space-around;
     }
+    @media only screen and (min-width: 992px) {
+      justify-content: space-evenly;
+    }
     .M1__header {
       display: flex;
       flex-direction: column;
@@ -30,6 +33,7 @@ footer {
         }
       }
       .header__text {
+        color: $blue;
         display: flex;
         justify-content: center;
         margin: 0 0 0.5rem 0;
@@ -66,12 +70,14 @@ footer {
     .M1__main {
       align-items: center;
       display: flex;
-      flex-wrap: wrap;
+      flex-basis: 700px;
+      flex-flow: column wrap;
+      gap: 0 1rem;
       margin: 1rem auto;
       @media only screen and (min-width: 992px) {
-        flex-direction: column;
-        flex-basis: 500px;
-        height: 225px;
+        align-content: center;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         margin: auto 0;
       }
       .main__block {
@@ -89,8 +95,9 @@ footer {
           font-size: 1.25rem;
           height: 75px;
           margin: 0 0.25rem;
+          max-width: 350px;
           padding: 0.5rem 0;
-          width: 200px;
+          width: 47.5%;
         }
         &:hover {
           span {
