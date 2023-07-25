@@ -52,6 +52,10 @@ select {
   padding: 0.5em 1.5em;
   text-decoration: none;
 }
+.button-main:hover {
+  background-color: #ff8542;
+  color: #fff;
+}
 
 .button-secondary {
   background-color: #323d4a;
@@ -69,6 +73,10 @@ select {
   max-width: 250px;
   padding: 0.5em 1.75em;
   text-decoration: none;
+}
+.button-secondary:hover {
+  background-color: #f3d52a;
+  color: #323d4a;
 }
 
 .whatsapp-fixed {
@@ -702,9 +710,9 @@ select {
   margin: 0 0 0.5rem 0;
 }
 .main .main__M3 .M3__content-main .main__block .block__card {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #ff8542;
   border-radius: 1.5rem;
   color: #fff;
@@ -740,6 +748,7 @@ select {
 .main .main__M3 .M3__content-main .main__block .block__card h2 {
   font-size: 1.75rem;
   font-weight: 700;
+  margin: 0;
 }
 .main .main__M3 .M3__content-main .main__block .block__card p {
   font-size: 1.25rem;
@@ -798,6 +807,9 @@ select {
   margin: 0.75rem auto;
   max-width: 300px;
 }
+.main .main__M3 .M3__content-footer .footer__links .button-secondary:hover {
+  background-color: #f9f4e1;
+}
 @media only screen and (min-width: 576px) {
   .main .main__M3 .M3__content-footer .footer__links .button-secondary {
     margin: 0 0.75rem;
@@ -826,6 +838,7 @@ select {
 }
 .main .main__M4 .M4__content-header p {
   font-size: 2.5rem;
+  font-weight: 700;
   margin: 0 0 0.5rem 0;
   text-align: center;
 }
@@ -902,6 +915,10 @@ select {
 }
 .main .main__M4 .M4__content-main .main__block > a {
   margin: 2rem auto 0 auto;
+}
+.main .main__M4 .M4__content-main .main__block > a:hover {
+  background-color: #ff8542;
+  color: #fff;
 }
 .main .main__M5 {
   background-color: #f3d52a;
@@ -1040,6 +1057,10 @@ select {
 .main .main__M6 .M6__content-main .button-secondary {
   margin: 1rem auto;
 }
+.main .main__M6 .M6__content-main .button-secondary:hover {
+  background-color: #ff8542;
+  color: #fff;
+}
 .main .main__M6 .M6__content-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1094,20 +1115,18 @@ select {
   }
 }
 .main .main__M6 .M6__content-footer .footer__block p {
+  color: #fff;
   margin: 0.75rem 0;
 }
 .main .main__M6 .M6__content-footer .footer__block p:nth-of-type(1) {
-  color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
 }
 .main .main__M6 .M6__content-footer .footer__block p:nth-of-type(2) {
-  color: #323d4a;
   font-size: 1.25rem;
 }
 .main .main__M6 .M6__content-footer .footer__block p:nth-of-type(3) {
-  color: #323d4a;
   font-size: 1.25rem;
   font-weight: 700;
 }

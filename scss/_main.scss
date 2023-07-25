@@ -364,7 +364,7 @@
           margin: 0 0 0.5rem 0;
         }
         .block__card {
-          align-items: center;
+          align-items: flex-start;
           background-color: $orange;
           border-radius: 1.5rem;
           color: #fff;
@@ -388,6 +388,7 @@
           h2 {
             font-size: $font-md;
             font-weight: 700;
+            margin: 0;
           }
           p {
             font-size: $font-xs;
@@ -433,6 +434,9 @@
           color: $blue;
           margin: 0.75rem auto;
           max-width: 300px;
+          &:hover {
+            background-color: $beige;
+          }
           @media only screen and (min-width: 576px) {
             margin: 0 0.75rem;
           }
@@ -454,6 +458,7 @@
       flex-flow: column wrap;
       p {
         font-size: $font-xl;
+        font-weight: 700;
         margin: 0 0 0.5rem 0;
         text-align: center;
       }
@@ -536,6 +541,10 @@
         }
         & > a {
           margin: 2rem auto 0 auto;
+          &:hover {
+            background-color: $orange;
+            color: #fff;
+          }
         }
       }
     }
@@ -634,6 +643,10 @@
       }
       .button-secondary {
         margin: 1rem auto;
+        &:hover {
+          background-color: $orange;
+          color: #fff;
+        }
       }
     }
     .M6__content-footer {
@@ -669,19 +682,17 @@
           padding: 1.75rem 3rem 1.75rem 2.5rem;
         }
         p {
+          color: #fff;
           margin: 0.75rem 0;
           &:nth-of-type(1) {
-            color: #fff;
             font-size: $font-xl;
             font-weight: 700;
             margin: 0;
           }
           &:nth-of-type(2) {
-            color: $blue;
             font-size: $font-xs;
           }
           &:nth-of-type(3) {
-            color: $blue;
             font-size: $font-xs;
             font-weight: 700;
           }

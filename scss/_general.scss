@@ -49,6 +49,10 @@ select {
   max-width: fit-content;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  &:hover {
+    background-color: $orange;
+    color: #fff;
+  }
 }
 
 .button-secondary {
@@ -63,6 +67,10 @@ select {
   max-width: 250px;
   padding: 0.5em 1.75em;
   text-decoration: none;
+  &:hover {
+    background-color: $yellow;
+    color: $blue;
+  }
 }
 
 .whatsapp-fixed {
