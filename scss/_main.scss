@@ -232,7 +232,7 @@
     color: $blue;
     padding: 5rem 0.75rem;
     .M2__content-header {
-      margin: 0 auto 2rem auto;
+      margin: 0 auto;
       max-width: 850px;
       h1 {
         font-size: $font-xxl;
@@ -247,6 +247,23 @@
         &:last-of-type {
           margin: 0 auto;
           max-width: 650px;
+        }
+      }
+      .header__buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 2rem auto 0 auto;
+        max-width: 800px;
+        .header__buttons-button {
+          border: $blue 0.5px solid;
+          color: $blue;
+          font-weight: 700;
+          margin: 0.25rem;
+          padding: 0.25em 1em;
+          &.active {
+            background-color: $yellow;
+          }
         }
       }
     }
@@ -295,13 +312,13 @@
             }
           }
           &:nth-of-type(3),
-          &:nth-of-type(8) {
+          &:nth-of-type(9) {
             align-items: center;
             font-size: $font-lg;
             font-weight: 700;
             text-align: center;
           }
-          &:nth-of-type(9) {
+          &:nth-of-type(10) {
             & > div {
               display: flex;
               flex-flow: row nowrap;
@@ -321,7 +338,8 @@
           &:nth-of-type(5),
           &:nth-of-type(6),
           &:nth-of-type(7),
-          &:nth-of-type(9) {
+          &:nth-of-type(8),
+          &:nth-of-type(10) {
             align-items: flex-start;
             font-size: $font-xs;
             text-align: left;
@@ -330,8 +348,12 @@
               font-weight: 700;
               text-decoration: underline;
             }
+            span {
+              font-weight: 700;
+              margin: 0 auto;
+            }
           }
-          &:nth-of-type(10) {
+          &:nth-of-type(11) {
             border: 0;
             flex-flow: row wrap;
             justify-content: center;
