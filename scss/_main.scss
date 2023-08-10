@@ -425,7 +425,7 @@
           &.less-text {
             a {
               @media only screen and (min-width: 1200px) {
-                margin: 1.875rem auto 0 auto;
+                margin: 1.875rem 0 0 0;
               }
             }
           }
@@ -440,9 +440,6 @@
           }
           a {
             width: 250px;
-            @media only screen and (min-width: 1200px) {
-              margin: 0 auto;
-            }
           }
         }
       }

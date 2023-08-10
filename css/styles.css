@@ -39,6 +39,12 @@ select {
   margin: 0;
 }
 
+.wrapper {
+  /* Agrego un wrapper de max-width 1600px para lidiar con el stretching en dispositivos grandes */
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 .button-main {
   background-color: #f3d52a;
   border: 0;
@@ -800,7 +806,7 @@ select {
 }
 @media only screen and (min-width: 1200px) {
   .main .main__M3 .M3__content-main .main__block .block__card.less-text a {
-    margin: 1.875rem auto 0 auto;
+    margin: 1.875rem 0 0 0;
   }
 }
 .main .main__M3 .M3__content-main .main__block .block__card h2 {
@@ -814,11 +820,6 @@ select {
 }
 .main .main__M3 .M3__content-main .main__block .block__card a {
   width: 250px;
-}
-@media only screen and (min-width: 1200px) {
-  .main .main__M3 .M3__content-main .main__block .block__card a {
-    margin: 0 auto;
-  }
 }
 .main .main__M3 .M3__content-footer {
   background-color: #323d4a;

@@ -39,6 +39,12 @@ select {
   margin: 0;
 }
 
+.wrapper {
+  /* Agrego un wrapper de max-width 1600px para lidiar con el stretching en dispositivos grandes */
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 .button-main {
   background-color: $yellow;
   border: 0;

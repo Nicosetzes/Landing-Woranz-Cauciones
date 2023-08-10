@@ -508,12 +508,18 @@ buttons.forEach((button) => {
     if (button.classList.contains("active")) {
       return;
     } else {
-      buttons.forEach((button) => {
-        if (button.classList.contains("active"))
-          button.classList.remove("active");
-      });
+      /* Elimino la clase active en el botón que se encontraba activo (presionado) */
+      document
+        .querySelector(".header__buttons-button.active")
+        .classList.remove("active");
+
+      /* Agrego la clase active en el nuevo botón activo */
       button.classList.add("active");
+
+      /* Vacío el contenido del container (contenedor de las cards) */
       container.innerHTML = "";
+
+      /* Filtro las cards para obtener las que necesito, y las recorro para generar el HTML necesario en cada loop */
       cards
         .filter(({ key }) => key == id)
         .forEach(({ titulo, svg, precio, expensas, impuestos, garantia }) => {
@@ -595,6 +601,8 @@ buttons.forEach((button) => {
               >Pre-aprobar</a
             >
           </div>`;
+
+          /* En cada vuelta del loop, agrego el HTML generado al container */
           container.appendChild(node);
         });
     }
