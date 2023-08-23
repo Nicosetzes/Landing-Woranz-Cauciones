@@ -1258,18 +1258,10 @@ footer .footer__M1 .M1__header .header__banner {
           justify-content: center;
   margin: 0 auto;
   padding: 0;
-  width: 350px;
+  width: 250px;
 }
 @media only screen and (max-width: 400px) {
   footer .footer__M1 .M1__header .header__banner {
-    width: 100%;
-  }
-}
-footer .footer__M1 .M1__header .header__banner img {
-  max-width: 325px;
-}
-@media only screen and (max-width: 400px) {
-  footer .footer__M1 .M1__header .header__banner img {
     width: 100%;
   }
 }

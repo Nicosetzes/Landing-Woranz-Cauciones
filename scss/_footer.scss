@@ -21,15 +21,9 @@ footer {
         justify-content: center;
         margin: 0 auto;
         padding: 0;
-        width: 350px;
+        width: 250px;
         @media only screen and (max-width: 400px) {
           width: 100%;
-        }
-        img {
-          max-width: 325px;
-          @media only screen and (max-width: 400px) {
-            width: 100%;
-          }
         }
       }
       .header__text {
