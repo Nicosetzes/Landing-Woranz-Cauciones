@@ -1,6 +1,6 @@
 .main {
   background-color: $gray;
-  padding: 121px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
+  padding: 115px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
   .main__hero {
     background-color: $beige;
     display: flex;
@@ -198,7 +198,7 @@
       }
     }
     .M1__content-footer {
-      background-color: $green;
+      background-color: $orange;
       border-radius: 2rem;
       display: flex;
       flex-flow: column wrap;
@@ -620,13 +620,11 @@
           font-size: $font-sm;
         }
         &:nth-of-type(3),
-        &:nth-of-type(4),
-        &:nth-of-type(6) {
+        &:nth-of-type(4) {
           font-size: $font-xs;
           font-weight: 700;
         }
-        &:nth-of-type(5),
-        &:nth-of-type(7) {
+        &:nth-of-type(5) {
           font-size: 1.125rem;
         }
       }
@@ -665,7 +663,7 @@
         justify-content: center;
         .block__card {
           align-items: center;
-          background-color: $green;
+          background-color: $blue;
           border-radius: 1rem;
           color: #fff;
           display: flex;

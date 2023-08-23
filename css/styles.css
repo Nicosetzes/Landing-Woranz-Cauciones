@@ -131,7 +131,7 @@ select {
   padding-top: 0.75rem;
 }
 .header nav .container-fluid img {
-  width: 175px;
+  width: 150px;
 }
 .header nav .container-fluid .navbar-toggler {
   border: 0;
@@ -205,7 +205,7 @@ select {
 
 .main {
   background-color: #f5f5f5;
-  padding: 121px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
+  padding: 115px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
 }
 .main .main__hero {
   background-color: #f9f4e1;
@@ -498,7 +498,7 @@ select {
       align-self: center;
 }
 .main .main__M1 .M1__content-footer {
-  background-color: #009e9c;
+  background-color: #ff8542;
   border-radius: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,11 +1033,11 @@ select {
 .main .main__M5 .M5__content-text p:nth-of-type(2) {
   font-size: 1.5rem;
 }
-.main .main__M5 .M5__content-text p:nth-of-type(3), .main .main__M5 .M5__content-text p:nth-of-type(4), .main .main__M5 .M5__content-text p:nth-of-type(6) {
+.main .main__M5 .M5__content-text p:nth-of-type(3), .main .main__M5 .M5__content-text p:nth-of-type(4) {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.main .main__M5 .M5__content-text p:nth-of-type(5), .main .main__M5 .M5__content-text p:nth-of-type(7) {
+.main .main__M5 .M5__content-text p:nth-of-type(5) {
   font-size: 1.125rem;
 }
 .main .main__M5 .M5__content-image {
@@ -1093,7 +1093,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #009e9c;
+  background-color: #323d4a;
   border-radius: 1rem;
   color: #fff;
   display: -webkit-box;
@@ -1382,7 +1382,12 @@ footer .footer__M1 .M1__main .main__block:hover span {
 }
 footer .footer__M2 {
   background-color: #323d4a;
-  padding: 3rem 1.25rem 4rem 1.25rem;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+}
+@media only screen and (min-width: 992px) {
+  footer .footer__M2 {
+    padding: 3rem 1.25rem 4rem 1.25rem;
+  }
 }
 footer .footer__M2 .M2__main {
   display: -webkit-box;
@@ -1392,8 +1397,20 @@ footer .footer__M2 .M2__main {
       flex-wrap: wrap;
 }
 footer .footer__M2 .M2__main .main__block {
-  margin: 1rem auto;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem auto;
+  max-width: 400px;
 }
 @media only screen and (min-width: 992px) {
   footer .footer__M2 .M2__main .main__block {
@@ -1410,30 +1427,43 @@ footer .footer__M2 .M2__main .main__block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 1rem auto;
     max-width: 275px;
   }
 }
 footer .footer__M2 .M2__main .main__block p {
   color: #f9f4e1;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 450;
-  line-height: 1.25rem;
   margin: 0.25rem 0;
   text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  footer .footer__M2 .M2__main .main__block p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 footer .footer__M2 .M2__main .main__block p:last-child {
   font-weight: 700;
 }
 footer .footer__M2 .M2__main .block__logo {
-  margin: 2rem auto 3rem auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0.5rem auto 1rem auto;
 }
 @media only screen and (max-width: 400px) {
   footer .footer__M2 .M2__main .block__logo {
     width: 100%;
   }
 }
+@media only screen and (min-width: 992px) {
+  footer .footer__M2 .M2__main .block__logo {
+    margin: 1rem auto 2rem auto;
+  }
+}
 footer .footer__M2 .M2__main .block__legal {
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
 }
 @media only screen and (min-width: 992px) {
   footer .footer__M2 .M2__main .block__legal {
@@ -1443,18 +1473,19 @@ footer .footer__M2 .M2__main .block__legal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     width: 750px;
   }
 }
 footer .footer__M2 .M2__main .block__legal p {
   color: #f9f4e1;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 450;
   line-height: 15px;
 }
 @media only screen and (min-width: 992px) {
   footer .footer__M2 .M2__main .block__legal p {
+    font-size: 0.75rem;
     margin: 0;
   }
 }
