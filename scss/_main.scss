@@ -233,7 +233,7 @@
     padding: 5rem 0.75rem;
     .M2__content-header {
       margin: 0 auto;
-      max-width: 850px;
+      max-width: 800px;
       h1 {
         font-size: $font-xxl;
         font-weight: 700;
@@ -244,27 +244,6 @@
       p {
         font-size: $font-sm;
         text-align: center;
-        &:last-of-type {
-          margin: 0 auto;
-          max-width: 650px;
-        }
-      }
-      .header__buttons {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: 2rem auto 0 auto;
-        max-width: 800px;
-        .header__buttons-button {
-          border: $blue 0.5px solid;
-          color: $blue;
-          font-weight: 700;
-          margin: 0.25rem;
-          padding: 0.25em 1em;
-          &.active {
-            background-color: $yellow;
-          }
-        }
       }
     }
     .M2__content-main {
@@ -279,7 +258,7 @@
         flex-flow: column wrap;
         margin: 1rem 0.5rem;
         max-width: 435px;
-        padding: 3rem 0.5rem 1.5rem 0.5rem;
+        padding: 0.75rem 0.5rem 1.5rem 0.5rem;
         position: relative;
         & > .information__block {
           border-bottom: $blue 1px solid;
@@ -292,33 +271,43 @@
             flex-flow: column wrap;
             font-size: $font-md;
             font-weight: 700;
-            padding: 3.5rem 0 0 0;
             text-align: center;
             p {
               &:first-child {
-                font-weight: 900;
+                font-size: 3.5rem;
+                font-weight: 700;
+              }
+              &:last-child {
+                font-size: $font-xs;
               }
             }
           }
           &:nth-of-type(2) {
             align-items: center;
-            font-size: $font-xxl;
+            font-size: $font-sm;
             text-align: center;
             p {
-              line-height: 3rem;
-              span {
-                font-weight: 700;
-              }
+              font-weight: 900;
+              line-height: 2rem;
             }
           }
-          &:nth-of-type(3),
-          &:nth-of-type(9) {
+          &:nth-of-type(3) {
             align-items: center;
+            font-size: $font-xs;
+            font-weight: 700;
+            text-align: center;
+          }
+          &:nth-of-type(4) {
             font-size: $font-lg;
             font-weight: 700;
             text-align: center;
           }
-          &:nth-of-type(10) {
+          &:nth-of-type(8) {
+            font-size: $font-lg;
+            font-weight: 700;
+            text-align: center;
+          }
+          &:nth-of-type(11) {
             & > div {
               display: flex;
               flex-flow: row nowrap;
@@ -334,15 +323,14 @@
               }
             }
           }
-          &:nth-of-type(4),
           &:nth-of-type(5),
           &:nth-of-type(6),
           &:nth-of-type(7),
-          &:nth-of-type(8),
+          &:nth-of-type(9),
           &:nth-of-type(10) {
-            align-items: flex-start;
+            align-items: center;
             font-size: $font-xs;
-            text-align: left;
+            text-align: center;
             a {
               color: $blue;
               font-weight: 700;
@@ -492,7 +480,7 @@
     background-color: $gray;
     color: $blue;
     padding: 3rem 0.75rem;
-    scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado */
+    scroll-margin-top: 175px; /* Altura de la navbar + un extra para que el destino esté centrado */
     .M4__content-header {
       align-items: center;
       display: flex;
@@ -520,7 +508,7 @@
         margin: 1rem auto;
         max-width: 700px;
         padding: 2rem;
-        scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado */
+        scroll-margin-top: 175px; /* Altura de la navbar + un extra para que el destino esté centrado */
         & > p {
           &:nth-of-type(1) {
             background-color: $yellow;
