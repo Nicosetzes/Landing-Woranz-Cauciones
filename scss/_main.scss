@@ -230,15 +230,14 @@
   }
   .main__M2 {
     color: $blue;
-    padding: 5rem 0.75rem;
+    padding: 5rem 0;
     .M2__content-header {
-      margin: 0 auto;
+      margin: 0 auto 5rem auto;
       max-width: 800px;
       h1 {
         font-size: $font-xxl;
         font-weight: 700;
         line-height: 3.25rem;
-        margin: 0 0 1.5rem 0;
         text-align: center;
       }
       p {
@@ -247,116 +246,94 @@
       }
     }
     .M2__content-main {
+      background-color: $beige;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      .main__information {
-        background-color: #fff;
-        border: $blue 1px solid;
-        border-radius: 1.75rem;
+      .main__header {
+        align-items: center;
+        background-color: $blue;
         display: flex;
         flex-flow: column wrap;
-        margin: 1rem 0.5rem;
-        max-width: 435px;
-        padding: 0.75rem 0.5rem 1.5rem 0.5rem;
-        position: relative;
-        & > .information__block {
-          border-bottom: $blue 1px solid;
-          display: flex;
-          flex-flow: column wrap;
-          padding: 1.5rem 1rem;
-          width: 100%;
-          &:nth-of-type(1) {
-            align-items: center;
-            flex-flow: column wrap;
-            font-size: $font-md;
-            font-weight: 700;
-            text-align: center;
-            p {
-              &:first-child {
-                font-size: 3.5rem;
-                font-weight: 700;
-              }
-              &:last-child {
-                font-size: $font-xs;
-              }
-            }
-          }
-          &:nth-of-type(2) {
-            align-items: center;
-            font-size: $font-sm;
-            text-align: center;
-            p {
-              font-weight: 900;
-              line-height: 2rem;
-            }
-          }
-          &:nth-of-type(3) {
-            align-items: center;
-            font-size: $font-xs;
-            font-weight: 700;
-            text-align: center;
-          }
-          &:nth-of-type(4) {
-            font-size: $font-lg;
-            font-weight: 700;
-            text-align: center;
-          }
-          &:nth-of-type(8) {
-            font-size: $font-lg;
-            font-weight: 700;
-            text-align: center;
-          }
-          &:nth-of-type(11) {
-            & > div {
-              display: flex;
-              flex-flow: row nowrap;
-              margin: 0 0 0.55rem 0;
-              &:last-of-type {
-                margin: 0;
-              }
-              svg {
-                display: flex;
-                margin: 0.5rem 0.5rem 0 0;
-                min-width: 0.5rem;
-                max-width: 0.5rem;
-              }
-            }
-          }
-          &:nth-of-type(5),
-          &:nth-of-type(6),
-          &:nth-of-type(7),
-          &:nth-of-type(9),
-          &:nth-of-type(10) {
-            align-items: center;
-            font-size: $font-xs;
-            text-align: center;
-            a {
-              color: $blue;
-              font-weight: 700;
-              text-decoration: underline;
-            }
-            span {
-              font-weight: 700;
-              margin: 0 auto;
-            }
-          }
-          &:nth-of-type(11) {
-            border: 0;
-            flex-flow: row wrap;
-            justify-content: center;
-            padding: 1.5rem 0 0 0;
-            .button-secondary {
-              width: 100%;
-            }
-          }
+        padding: 0.75rem 2rem;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          flex-flow: row nowrap;
+          justify-content: space-evenly;
         }
-        & > svg {
-          position: absolute;
-          right: 0;
-          top: 0;
+        @media only screen and (min-width: 1200px) {
+          padding: 0.75rem 5rem;
+        }
+        p {
+          text-align: center;
+          &:first-of-type {
+            color: $beige;
+            font-size: $font-xl;
+          }
+          &:last-of-type {
+            color: $yellow;
+            font-size: $font-xs;
+          }
         }
       }
+      .main__information {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        max-width: 500px;
+        padding: 0.75rem 2.5rem;
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+          flex-basis: 55%;
+          margin: 0 auto;
+          padding: 0.75rem 1.25rem;
+        }
+        @media only screen and (min-width: 1200px) {
+          max-width: 750px;
+        }
+        p {
+          margin: 0.25rem 0;
+          span {
+            font-weight: 700;
+          }
+          &:nth-of-type(1) {
+            font-size: $font-lg;
+            font-weight: 900;
+          }
+          &:nth-of-type(2) {
+            font-size: $font-xs;
+            line-height: 2rem;
+          }
+          &:nth-of-type(3) {
+            font-size: $font-sm;
+            font-weight: 900;
+          }
+          &:nth-of-type(4) {
+            font-size: $font-xs;
+            font-weight: 700;
+          }
+          &:nth-of-type(5),
+          &:nth-of-type(10) {
+            font-size: $font-xs;
+            font-weight: 900;
+          }
+        }
+        .button-secondary {
+          margin: 0.5rem 0 0 0;
+          max-width: none;
+        }
+      }
+    }
+    .main__image {
+      max-width: 500px;
+      width: 100%;
+      @media only screen and (min-width: 768px) {
+        flex-basis: 45%;
+        max-width: 425px;
+      }
+      // @media only screen and (min-width: 1200px) {
+      //   margin: 0 auto;
+      // }
     }
   }
   .main__M3 {
