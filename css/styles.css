@@ -121,19 +121,26 @@ select {
   background-color: #323d4a;
   padding: 1.5rem 0.75rem;
 }
+.header nav .container-fluid {
+  max-width: 600px;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+}
 @media only screen and (min-width: 992px) {
-  .header nav {
-    padding: 1.5rem 3rem;
+  .header nav .container-fluid {
+    max-width: none;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .header nav {
-    padding: 1.5rem 11rem;
+  .header nav .container-fluid {
+    /* 
+    Uso la función calc, que me permite un valor variable para max-width en el container-fluid.
+    Para 1200px de pantalla, el max-width del container (para quedar alineado con lo de abajo)
+    debe ser 900px. Si aplico regla de 3 (siendo 100vw el tamaño de la pantalla en un determinado momento)
+    el cálculo sería 100vw * 900px / 1200px. Dado que 900/1200 = 0.75, el cálculo final es 100vw * 0.75
+    */
+    max-width: 75vw;
   }
-}
-.header nav .container-fluid {
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
 }
 .header nav .container-fluid img {
   width: 150px;
@@ -673,7 +680,7 @@ select {
   font-weight: 900;
 }
 .main .main__M2 .M2__content-main .main__information .button-secondary {
-  margin: 0.5rem auto 0 auto;
+  margin: 0.5rem 0 0 auto;
   width: 300px;
 }
 .main .main__M2 .main__image {

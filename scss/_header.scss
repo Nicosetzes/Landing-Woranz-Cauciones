@@ -2,15 +2,22 @@
   nav {
     background-color: $blue;
     padding: 1.5rem 0.75rem;
-    @media only screen and (min-width: 992px) {
-      padding: 1.5rem 3rem;
-    }
-    @media only screen and (min-width: 1200px) {
-      padding: 1.5rem 11rem;
-    }
     .container-fluid {
+      max-width: 600px;
       padding-bottom: 0.75rem;
       padding-top: 0.75rem;
+      @media only screen and (min-width: 992px) {
+        max-width: none;
+      }
+      @media only screen and (min-width: 1200px) {
+        /* 
+        Uso la función calc, que me permite un valor variable para max-width en el container-fluid.
+        Para 1200px de pantalla, el max-width del container (para quedar alineado con lo de abajo)
+        debe ser 900px. Si aplico regla de 3 (siendo 100vw el tamaño de la pantalla en un determinado momento)
+        el cálculo sería 100vw * 900px / 1200px. Dado que 900/1200 = 0.75, el cálculo final es 100vw * 0.75
+        */
+        max-width: calc(100vw * 0.75);
+      }
       img {
         width: 150px;
       }
