@@ -293,6 +293,10 @@
         }
         p {
           margin: 0.25rem 0;
+          a {
+            color: $blue;
+            text-decoration: underline;
+          }
           span {
             font-weight: 700;
           }
@@ -319,8 +323,8 @@
           }
         }
         .button-secondary {
-          margin: 0.5rem 0 0 0;
-          max-width: none;
+          margin: 0.5rem auto 0 auto;
+          width: 300px;
         }
       }
     }
