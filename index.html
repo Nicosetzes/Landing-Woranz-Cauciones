@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NZPDL4B");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2409651189242985");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Woranz - Cauciones</title>
+    <meta
+      name="description"
+      content="Solicitá tu garantía de alquiler Woranz para firmar tu nuevo contrato de alquiler"
+    />
+    <title>Woranz - Caución de Alquiler</title>
     <link rel="icon" href="./media/favicon-32x32.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -22,10 +69,31 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NZPDL4B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Meta (noscript) -->
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2409651189242985&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta (noscript) -->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <img src="./media/banner_01.png" alt="" />
+          <a href="#">
+            <img src="./media/banner_01.png" alt="logo woranz" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,14 +109,14 @@
             <div class="navbar-nav">
               <a class="nav-link" href="#main__M4">Preguntas frecuentes</a>
               <a
-                class="nav-link"
+                class="nav-link link-target"
                 href="https://woranz.com/productores/"
                 target="_blank"
                 >Productores</a
               >
               <a
                 id="link-form"
-                class="nav-link"
+                class="nav-link link-target"
                 href="https://woranz.com/cobertura/caucion-alquiler/#preapro"
                 target="_blank"
                 >Solicitar AHORA</a
@@ -62,7 +130,7 @@
       <section class="main__hero">
         <div class="hero__content-header">
           <h1>Seguro de Caución para Alquiler Woranz</h1>
-          <p>La garantía que necesitás para firmar tu contrato de alquiler</p>
+          <h2>La garantía que necesitás para firmar tu contrato de alquiler</h2>
           <a
             href="https://woranz.com/cobertura/caucion-alquiler/#preapro"
             target="_blank"
@@ -71,7 +139,7 @@
           >
         </div>
         <div class="hero__content-image">
-          <img src="./media/hero-image.png" alt="" />
+          <img src="./media/hero-image.png" alt="familia de cuatro personas" />
         </div>
         <div class="hero__content-info">
           <div class="card">
@@ -90,10 +158,10 @@
                   fill="#F9F4E1"
                 />
               </svg>
-              <p>
+              <h3>
                 <span>Gestionalo 100% online.</span> En 2 horas hábiles tenés la
                 preaprobación.
-              </p>
+              </h3>
             </div>
             <div class="card-item">
               <svg
@@ -110,10 +178,10 @@
                   fill="#F9F4E1"
                 />
               </svg>
-              <p>
+              <h3>
                 <span>6 Cuotas sin interés 25% de descuento</span> pagando por
                 transferencia bancaria.
-              </p>
+              </h3>
             </div>
             <div class="card-item">
               <svg
@@ -130,9 +198,9 @@
                   fill="#F9F4E1"
                 />
               </svg>
-              <p>
+              <h3>
                 <span>¡Sin garantía propietaria!</span> Solo con tus ingresos.
-              </p>
+              </h3>
             </div>
             <div class="card-item">
               <svg
@@ -149,14 +217,14 @@
                   fill="#F9F4E1"
                 />
               </svg>
-              <p>Para alquileres en <span>pesos o dólares.</span></p>
+              <h3>Para alquileres en <span>pesos o dólares.</span></h3>
             </div>
           </div>
         </div>
       </section>
       <section class="main__M1">
         <div class="M1__content-header">
-          <p>Con Woranz tenés garantía</p>
+          <h2>Con Woranz tenés garantía</h2>
           <p>¿Necesitás firmar un contrato de alquiler?</p>
           <p>
             Completá el formulario y en 2 hs hábiles tenés la preaprobación.
@@ -222,7 +290,7 @@
             </div>
           </div>
           <div class="main__image">
-            <img src="./media/house.png" alt="" />
+            <img src="./media/house.png" alt="dibujo de una casa" />
           </div>
         </div>
         <div class="M1__content-footer">
@@ -286,12 +354,14 @@
               >
             </div>
             <div class="main__image">
-              <img src="./media/family.jpg" alt="" />
+              <img
+                src="./media/family.jpg"
+                alt="familia mudandose a una nueva casa"
+              />
             </div>
           </div>
         </section>
       </div>
-
       <section class="main__M3">
         <div class="M3__content-header"><p>Nuestras coberturas</p></div>
         <div class="M3__content-main">
@@ -410,27 +480,27 @@
           </div>
         </div>
         <div class="M4__content-main">
-          <div id="FAQ-inquilinos" class="main__block">
+          <article id="FAQ-inquilinos" class="main__block">
             <p>Preguntas frecuentes para <span>inquilinos</span></p>
             <p>Respuestas sobre tu Caución para Alquiler Woranz</p>
-            <div class="accordion accordion-flush" id="accordion">
+            <div class="accordion accordion-flush" id="accordionInquilinos">
               <div class="accordion-item">
                 <div class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
+                    data-bs-target="#flush-collapseInquilinosOne"
                     aria-expanded="false"
-                    aria-controls="flush-collapseOne"
+                    aria-controls="flush-collapseInquilinosOne"
                   >
                     ¿Puedo solicitar mi seguro para contratos en dólares?
                   </button>
                 </div>
                 <div
-                  id="flush-collapseOne"
+                  id="flush-collapseInquilinosOne"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionInquilinos"
                 >
                   <div class="accordion-body">
                     ¡Sí! Tu seguro de caución para alquiler es apto para
@@ -444,17 +514,17 @@
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
+                    data-bs-target="#flush-collapseInquilinosTwo"
                     aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
+                    aria-controls="flush-collapseInquilinosTwo"
                   >
                     ¿Sirve para contratos de alquiler comercial?
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseTwo"
+                  id="flush-collapseInquilinosTwo"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionInquilinos"
                 >
                   <div class="accordion-body">
                     ¡Sí! Podés cotizar tu seguro de caución para alquiler para
@@ -468,17 +538,17 @@
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
+                    data-bs-target="#flush-collapseInquilinosThree"
                     aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+                    aria-controls="flush-collapseInquilinosThree"
                   >
                     ¿Cuánto dura el seguro de caución de alquiler?
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseThree"
+                  id="flush-collapseInquilinosThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionInquilinos"
                 >
                   <div class="accordion-body">
                     El seguro de caución para alquiler cubre el total del
@@ -494,31 +564,31 @@
               class="button-secondary link-target"
               >PEDILA AHORA</a
             >
-          </div>
-          <div id="FAQ-propietarios" class="main__block">
+          </article>
+          <article id="FAQ-propietarios" class="main__block">
             <p>Preguntas frecuentes para <span>propietarios</span></p>
             <p>
               Las respuestas que necesitás sobre el seguro de caución para poner
               en alquiler tu vivienda o local.
             </p>
-            <div class="accordion accordion-flush" id="accordion">
+            <div class="accordion accordion-flush" id="accordionPropietarios">
               <div class="accordion-item">
                 <div class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
+                    data-bs-target="#flush-collapsePropietariosOne"
                     aria-expanded="false"
-                    aria-controls="flush-collapseOne"
+                    aria-controls="flush-collapsePropietariosOne"
                   >
                     ¿Qué es el seguro de caución de vivienda?
                   </button>
                 </div>
                 <div
-                  id="flush-collapseOne"
+                  id="flush-collapsePropietariosOne"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionPropietarios"
                 >
                   <div class="accordion-body">
                     Es una póliza de seguro, un documento legal que tiene valor
@@ -533,17 +603,17 @@
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
+                    data-bs-target="#flush-collapsePropietariosTwo"
                     aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
+                    aria-controls="flush-collapsePropietariosTwo"
                   >
                     ¿Qué cubre? ¿Cuánto tiempo?
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseTwo"
+                  id="flush-collapsePropietariosTwo"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionPropietarios"
                 >
                   <div class="accordion-body">
                     <ul>
@@ -567,17 +637,17 @@
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
+                    data-bs-target="#flush-collapsePropietariosThree"
                     aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+                    aria-controls="flush-collapsePropietariosThree"
                   >
                     ¿Quién paga el seguro?
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseThree"
+                  id="flush-collapsePropietariosThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordionPropietarios"
                 >
                   <div class="accordion-body">
                     El inquilino es quien paga su garantía. Es un pago único por
@@ -593,11 +663,11 @@
               class="button-secondary link-target"
               >PEDILA AHORA</a
             >
-          </div>
+          </article>
         </div>
       </section>
       <section class="main__M5">
-        <div class="M5__content-text">
+        <article class="M5__content-text">
           <p>Inmobiliarias</p>
           <p>¿Por qué trabajar con Woranz?</p>
           <p>Somos personas trabajando con personas</p>
@@ -606,9 +676,9 @@
             Buscamos que tengas candidatos confiables para alquilar tus
             propiedades verificando sus ingresos y documentación.
           </p>
-        </div>
+        </article>
         <div class="M5__content-image">
-          <img src="./media/woman_01.png" alt="" />
+          <img src="./media/woman_01.png" alt="mujer sonriente" />
         </div>
       </section>
       <div class="wrapper">
@@ -766,7 +836,7 @@
                 Certificado.
               </p>
             </div>
-            <img src="./media/woman_02.png" alt="" />
+            <img src="./media/woman_02.png" alt="mujer con megáfono" />
           </div>
         </section>
       </div>
@@ -774,7 +844,7 @@
         <div class="footer__M1">
           <div class="M1__header">
             <div class="header__banner">
-              <img src="./media/banner_02.png" alt="" />
+              <img src="./media/banner_02.png" alt="logo woranz" />
             </div>
             <div class="header__text">
               <p>Seguinos</p>
@@ -786,7 +856,7 @@
                 class="social__block link-target"
                 aria-label="Ir a Facebook"
               >
-                <img src="./media/facebook.svg" alt="" />
+                <img src="./media/facebook.svg" alt="icono facebook" />
               </a>
               <a
                 href="https://www.instagram.com/woranz/"
@@ -794,7 +864,7 @@
                 class="social__block link-target"
                 aria-label="Ir a Instagram"
               >
-                <img src="./media/instagram.svg" alt="" />
+                <img src="./media/instagram.svg" alt="icono instagram" />
               </a>
               <a
                 href="https://www.linkedin.com/company/woranz/"
@@ -802,7 +872,7 @@
                 class="social__block link-target"
                 aria-label="Ir a Linkedin"
               >
-                <img src="./media/linkedin.svg" alt="" />
+                <img src="./media/linkedin.svg" alt="icono linkedin" />
               </a>
             </div>
           </div>
@@ -856,7 +926,11 @@
               <p>Organismo de control</p>
               <p>www.argentina.gob.ar/ssn</p>
             </div>
-            <img class="block__logo" src="./media/ssn.png" alt="" />
+            <img
+              class="block__logo"
+              src="./media/ssn.png"
+              alt="logo superintendencia de seguros de la nación"
+            />
             <div class="block__legal">
               <p>
                 La entidad aseguradora dispone de un Servicio de Atención al
@@ -873,7 +947,7 @@
                 www.argentina.gob.ar/ssn
               </p>
             </div>
-            <img class="block__qr" src="./media/qr.png" alt="" />
+            <img class="block__qr" src="./media/qr.png" alt="qr" />
           </div>
         </div>
       </footer>

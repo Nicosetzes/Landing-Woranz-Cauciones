@@ -287,13 +287,13 @@ select {
     text-align: left;
   }
 }
-.main .main__hero .hero__content-header p {
+.main .main__hero .hero__content-header h2 {
   font-size: 1.5rem;
   font-weight: 450;
   margin: 1.5rem 0;
 }
 @media only screen and (min-width: 992px) {
-  .main .main__hero .hero__content-header p {
+  .main .main__hero .hero__content-header h2 {
     margin: 1.5rem auto 1.5rem 0;
     max-width: 425px;
     text-align: left;
@@ -382,12 +382,12 @@ select {
   height: 2.5rem;
   margin: 0 1rem 0 0;
 }
-.main .main__hero .hero__content-info .card .card-item p {
+.main .main__hero .hero__content-info .card .card-item h3 {
   color: #323d4a;
   font-size: 1.125rem;
   margin: 0;
 }
-.main .main__hero .hero__content-info .card .card-item p span {
+.main .main__hero .hero__content-info .card .card-item h3 span {
   font-weight: 700;
 }
 .main .main__M1 {
@@ -407,20 +407,23 @@ select {
 .main .main__M1 .M1__content-header {
   margin: 0 0 2rem 0;
 }
+.main .main__M1 .M1__content-header h2 {
+  color: #f9f4e1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
 .main .main__M1 .M1__content-header p {
   margin: 0 0 1.5rem 0;
   text-align: center;
 }
 .main .main__M1 .M1__content-header p:nth-of-type(1) {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-.main .main__M1 .M1__content-header p:nth-of-type(2) {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 2.5rem;
 }
-.main .main__M1 .M1__content-header p:nth-of-type(3) {
+.main .main__M1 .M1__content-header p:nth-of-type(2) {
   font-size: 1.25rem;
   margin: 0;
 }
@@ -917,13 +920,15 @@ select {
 .main .main__M4 .M4__content-main .main__block > p span {
   font-weight: 700;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item {
   border: 0;
   border-width: 0;
   color: #323d4a;
   margin: 0.5rem auto;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-header .accordion-button {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-header .accordion-button,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-header .accordion-button {
   border-bottom: #ff8542 1px solid;
   color: #323d4a;
   font-size: 1.5rem;
@@ -932,20 +937,25 @@ select {
   padding: 1rem 0;
   text-align: left;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-header .accordion-button:focus {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-header .accordion-button:focus,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-header .accordion-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-header .accordion-button::after {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-header .accordion-button::after,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-header .accordion-button::after {
   background-image: url("./../media/plus.svg");
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-header .accordion-button:not(.collapsed),
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background: none;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-header .accordion-button:not(.collapsed)::after,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url("./../media/minus.svg");
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-collapse .accordion-body {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-collapse .accordion-body,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-collapse .accordion-body {
   border: 0;
   font-size: 1.25rem;
   font-weight: 450;
@@ -953,7 +963,8 @@ select {
   padding: 1rem 0 1.25rem 0;
   text-align: left;
 }
-.main .main__M4 .M4__content-main .main__block #accordion .accordion-item .accordion-collapse .accordion-body ul {
+.main .main__M4 .M4__content-main .main__block #accordionInquilinos .accordion-item .accordion-collapse .accordion-body ul,
+.main .main__M4 .M4__content-main .main__block #accordionPropietarios .accordion-item .accordion-collapse .accordion-body ul {
   margin: 0;
 }
 .main .main__M4 .M4__content-main .main__block > a {

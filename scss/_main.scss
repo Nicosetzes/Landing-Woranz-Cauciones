@@ -37,7 +37,7 @@
           text-align: left;
         }
       }
-      p {
+      h2 {
         font-size: $font-sm;
         font-weight: 450;
         margin: 1.5rem 0;
@@ -101,7 +101,7 @@
             height: 2.5rem;
             margin: 0 1rem 0 0;
           }
-          p {
+          h3 {
             color: $blue;
             font-size: 1.125rem;
             margin: 0;
@@ -123,19 +123,22 @@
     }
     .M1__content-header {
       margin: 0 0 2rem 0;
+      h2 {
+        color: $beige;
+        font-size: $font-xs;
+        font-weight: 700;
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+      }
       p {
         margin: 0 0 1.5rem 0;
         text-align: center;
         &:nth-of-type(1) {
-          font-size: $font-xs;
-          font-weight: 700;
-        }
-        &:nth-of-type(2) {
           font-size: $font-xl;
           font-weight: 700;
           line-height: $font-xl;
         }
-        &:nth-of-type(3) {
+        &:nth-of-type(2) {
           font-size: $font-xs;
           margin: 0;
         }
@@ -505,7 +508,8 @@
             font-weight: 700;
           }
         }
-        #accordion {
+        #accordionInquilinos,
+        #accordionPropietarios {
           .accordion-item {
             border: 0;
             border-width: 0;
