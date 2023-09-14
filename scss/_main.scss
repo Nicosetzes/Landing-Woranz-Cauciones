@@ -249,50 +249,28 @@
       }
     }
     .M2__content-main {
+      align-items: center;
       background-color: $beige;
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: column;
       justify-content: center;
-      .main__header {
-        align-items: center;
-        background-color: $blue;
-        display: flex;
-        flex-flow: column wrap;
-        padding: 0.75rem 2rem;
-        width: 100%;
-        @media only screen and (min-width: 992px) {
-          flex-flow: row nowrap;
-          justify-content: space-evenly;
-        }
-        @media only screen and (min-width: 1200px) {
-          padding: 0.75rem 5rem;
-        }
-        p {
-          text-align: center;
-          &:first-of-type {
-            color: $beige;
-            font-size: $font-xl;
-          }
-          &:last-of-type {
-            color: $yellow;
-            font-size: $font-xs;
-          }
-        }
+      @media only screen and (min-width: 992px) {
+        flex-direction: row;
       }
       .main__information {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        max-width: 500px;
+        max-width: 525px;
         padding: 0.75rem 2.5rem;
         width: 100%;
         @media only screen and (min-width: 992px) {
-          flex-basis: 55%;
+          flex-basis: 60%;
           margin: 0 auto;
-          padding: 0.75rem 1.25rem;
+          padding: 0.75rem 0 0.75rem 1.25rem;
         }
         @media only screen and (min-width: 1200px) {
-          max-width: 750px;
+          max-width: 650px;
         }
         a {
           color: $blue;
@@ -310,24 +288,35 @@
         }
         li {
           margin: 0.25rem 0;
+          max-width: 525px;
           &:nth-of-type(1) {
+            margin: 0 0 0.25rem 0;
+          }
+          &:nth-of-type(1),
+          &:nth-of-type(3) {
             font-size: $font-lg;
             font-weight: 900;
           }
           &:nth-of-type(2) {
-            font-size: $font-xs;
-            line-height: 2rem;
-          }
-          &:nth-of-type(3) {
-            font-size: $font-sm;
-            font-weight: 900;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin: 0 0 2rem 0;
           }
           &:nth-of-type(4) {
             font-size: $font-xs;
+            line-height: 2rem;
+          }
+          &:nth-of-type(5) {
+            font-size: $font-sm;
+            font-weight: 900;
+          }
+          &:nth-of-type(6) {
+            font-size: $font-xs;
             font-weight: 700;
           }
-          &:nth-of-type(5),
-          &:nth-of-type(10) {
+          &:nth-of-type(7),
+          &:nth-of-type(12) {
             font-size: $font-xs;
             font-weight: 900;
           }
@@ -336,7 +325,9 @@
           &:nth-of-type(3),
           &:nth-of-type(4),
           &:nth-of-type(5),
-          &:nth-of-type(10) {
+          &:nth-of-type(6),
+          &:nth-of-type(7),
+          &:nth-of-type(12) {
             list-style: none;
           }
         }
@@ -359,7 +350,7 @@
       max-width: 500px;
       width: 100%;
       @media only screen and (min-width: 768px) {
-        flex-basis: 45%;
+        flex-basis: 60%;
         max-width: 425px;
       }
       // @media only screen and (min-width: 1200px) {
