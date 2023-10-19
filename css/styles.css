@@ -149,7 +149,7 @@ select {
   }
 }
 .header nav .container-fluid img {
-  width: 150px;
+  width: 175px;
 }
 .header nav .container-fluid .navbar-toggler {
   border: 0;
@@ -671,11 +671,11 @@ select {
   font-weight: 700;
   line-height: 1.5rem;
 }
-.main .main__M2 .M2__content-main .main__information li:nth-of-type(5), .main .main__M2 .M2__content-main .main__information li:nth-of-type(10) {
+.main .main__M2 .M2__content-main .main__information li:nth-of-type(5), .main .main__M2 .M2__content-main .main__information li:nth-of-type(11) {
   font-size: 1.25rem;
   font-weight: 900;
 }
-.main .main__M2 .M2__content-main .main__information li:nth-of-type(1), .main .main__M2 .M2__content-main .main__information li:nth-of-type(2), .main .main__M2 .M2__content-main .main__information li:nth-of-type(3), .main .main__M2 .M2__content-main .main__information li:nth-of-type(4), .main .main__M2 .M2__content-main .main__information li:nth-of-type(5), .main .main__M2 .M2__content-main .main__information li:nth-of-type(10) {
+.main .main__M2 .M2__content-main .main__information li:nth-of-type(1), .main .main__M2 .M2__content-main .main__information li:nth-of-type(2), .main .main__M2 .M2__content-main .main__information li:nth-of-type(3), .main .main__M2 .M2__content-main .main__information li:nth-of-type(4), .main .main__M2 .M2__content-main .main__information li:nth-of-type(5), .main .main__M2 .M2__content-main .main__information li:nth-of-type(11) {
   list-style: none;
 }
 .main .main__M2 .M2__content-main .main__information .button-secondary {
